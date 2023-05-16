@@ -502,11 +502,7 @@ int llread(char *packet)
 	}
 
 	packetSize = j;
-	// debugging code
 
-	// flag += data_error(PROBABILITY);
-	// printf("flag->%d\n", flag);
-	// data_error adiciona erro ficticio ao cenas nos Dados para verifying
 	if (bcc2 || flag == 1)
 	{
 		printf("Error in received data (BCC2), sending REJ\n");
